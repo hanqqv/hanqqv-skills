@@ -22,6 +22,22 @@
         "code-review",
         "technical-debt"
       ]
+    },
+    {
+      "name": "golang",
+      "source": "./plugins/golang",
+      "description": "Idiomatic Go and Go-aware refactoring: Effective Go / Google style rules, plus the Fowler catalog adapted to a language without classes or inheritance.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": [
+        "go",
+        "golang",
+        "refactoring",
+        "code-review",
+        "idiomatic-go",
+        "concurrency",
+        "best-practices"
+      ]
     }
   ]
 }

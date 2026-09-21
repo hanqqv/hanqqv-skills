@@ -1,0 +1,19 @@
+{
+  "name": "golang",
+  "version": "0.1.0",
+  "description": "Idiomatic Go: write and review against Effective Go and the Google Go Style Guide, and refactor Go with the Fowler catalog adapted to a language without classes or inheritance.",
+  "author": {
+    "name": "Han"
+  },
+  "license": "MIT",
+  "keywords": [
+    "go",
+    "golang",
+    "refactoring",
+    "code-review",
+    "idiomatic-go",
+    "effective-go",
+    "concurrency",
+    "best-practices"
+  ]
+}
