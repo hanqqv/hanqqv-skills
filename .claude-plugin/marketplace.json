@@ -1,0 +1,27 @@
+{
+  "name": "hanqqv-skills",
+  "owner": {
+    "name": "Han"
+  },
+  "metadata": {
+    "description": "Han's collection of Claude skills.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "refactoring-guru",
+      "source": "./plugins/refactoring-guru",
+      "description": "Detect code smells and apply the matching named refactoring in small, behavior-preserving steps.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": [
+        "refactoring",
+        "code-smells",
+        "clean-code",
+        "design-patterns",
+        "code-review",
+        "technical-debt"
+      ]
+    }
+  ]
+}

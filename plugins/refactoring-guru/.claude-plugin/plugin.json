@@ -1,0 +1,17 @@
+{
+  "name": "refactoring-guru",
+  "version": "0.1.0",
+  "description": "Refactor code using the Refactoring Guru / Fowler catalog: detect code smells, apply the matching named refactoring in small behavior-preserving steps, verify after each.",
+  "author": {
+    "name": "Han"
+  },
+  "license": "MIT",
+  "keywords": [
+    "refactoring",
+    "code-smells",
+    "clean-code",
+    "design-patterns",
+    "code-review",
+    "technical-debt"
+  ]
+}

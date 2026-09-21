@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.plugin
+node_modules/
+.env
