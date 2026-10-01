@@ -38,6 +38,23 @@
         "concurrency",
         "best-practices"
       ]
+    },
+    {
+      "name": "grill-me-microservices",
+      "source": "./plugins/grill-me-microservices",
+      "description": "Grill-me interview for microservice designs: boundaries, data, resilience, observability and end-to-end traceability, Go first.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": [
+        "microservices",
+        "architecture",
+        "system-design",
+        "grill-me",
+        "distributed-tracing",
+        "observability",
+        "opentelemetry",
+        "golang"
+      ]
     }
   ]
 }

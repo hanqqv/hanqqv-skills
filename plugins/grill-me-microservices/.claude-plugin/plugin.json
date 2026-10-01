@@ -1,0 +1,19 @@
+{
+  "name": "grill-me-microservices",
+  "version": "0.1.0",
+  "description": "Matt Pocock's grill-me interview method with a microservices layer on top: service boundaries, communication, data, resilience, deployment, observability and end-to-end traceability, Go first.",
+  "author": {
+    "name": "Han"
+  },
+  "license": "MIT",
+  "keywords": [
+    "microservices",
+    "architecture",
+    "system-design",
+    "grill-me",
+    "distributed-tracing",
+    "observability",
+    "opentelemetry",
+    "golang"
+  ]
+}

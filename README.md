@@ -13,6 +13,7 @@ Then install whichever plugin you want:
 ```
 /plugin install refactoring-guru@hanqqv-skills
 /plugin install golang@hanqqv-skills
+/plugin install grill-me-microservices@hanqqv-skills
 ```
 
 Or browse with `/plugin` and pick from the list.
@@ -43,6 +44,23 @@ Two Go skills. **`go-best-practices`** covers idiomatic Go per Effective Go, Go 
 
 Written against Go 1.27, with features attributed to the release that introduced them — both skills check `go.mod` before suggesting anything version-gated.
 
+### grill-me-microservices
+
+Matt Pocock's grill-me interview, unchanged, with a microservices layer on top. Claude questions you about your service design in rounds, giving a recommended answer for each question, until every decision is settled.
+
+**Triggers on:** "grill me on this microservice design" · "stress-test my service architecture" · `/grill-me-microservices`
+
+**What it gives Claude:**
+
+- Matt Pocock's grilling method, word for word: design tree, numbered question rounds with recommended answers, facts looked up rather than asked.
+- A microservices design tree: context, DDD boundaries, communication, data and sagas, resilience, deployment, observability, Go implementation.
+- A deep traceability branch: W3C trace context on every hop, async and outbox propagation, span links, sampling, linking logs and metrics to traces, end-to-end trace tests.
+- A MUST / MUST NOT list to judge answers against.
+- Go as the default language, with reference patterns for tracing, outbox, Kafka, circuit breakers, sagas and trace tests.
+- A design summary after you confirm: diagrams, decision log and a Go service skeleton.
+
+**Expect it to be thorough.** It won't stop until every branch is visited, and it won't write code until you confirm you're on the same page.
+
 ## Repository layout
 
 ```
@@ -69,6 +87,12 @@ plugins/
         references/               # catalog-mapping, worked-examples
           ...
     README.md
+  grill-me-microservices/
+    .claude-plugin/plugin.json
+    skills/
+      grill-me-microservices/
+        SKILL.md
+    README.md
 ```
 
 **Adding a skill to an existing plugin:** drop in `plugins/<plugin>/skills/<name>/SKILL.md`. No manifest change needed.
@@ -78,6 +102,8 @@ plugins/
 ## Credit
 
 The refactoring skills' smell catalog and technique names come from Martin Fowler's *Refactoring* and the [Refactoring Guru](https://refactoring.guru/) presentation of it. The Go rules follow [Effective Go](https://go.dev/doc/effective_go), [Go Code Review Comments](https://go.dev/wiki/CodeReviewComments), and the [Google Go Style Guide](https://google.github.io/styleguide/go/). This repo contains original prose describing those conventions, not their text.
+
+The grill-me-microservices skill builds on Matt Pocock's [`grilling` / `grill-me`](https://github.com/mattpocock/skills) skill (MIT; its method is included verbatim) and Jeffallan's [`microservices-architect`](https://github.com/Jeffallan/claude-skills) skill (MIT; architecture checklist).
 
 ## License
 
