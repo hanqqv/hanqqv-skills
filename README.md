@@ -14,6 +14,7 @@ Then install whichever plugin you want:
 /plugin install refactoring-guru@hanqqv-skills
 /plugin install golang@hanqqv-skills
 /plugin install grill-me-microservices@hanqqv-skills
+/plugin install unslop-technical-writing@hanqqv-skills
 ```
 
 Or browse with `/plugin` and pick from the list.
@@ -61,6 +62,19 @@ Matt Pocock's grill-me interview, unchanged, with a microservices layer on top. 
 
 **Expect it to be thorough.** It won't stop until every branch is visited, and it won't write code until you confirm you're on the same page.
 
+### unslop-technical-writing
+
+Removes AI slop from technical writing: READMEs and docs, code comments, godoc and docstrings, commit messages, PR descriptions and Jira text.
+
+**Triggers on:** writing or editing any of the above · "unslop this" · "too wordy" · "sounds like ChatGPT" · `/unslop-technical-writing`
+
+**What it gives Claude:**
+
+- A fact check first: claims stay only if code, a spec, command output or the user's own text backs them. No invented status codes, field names or "tests pass".
+- Each fact stated once, and comments that explain why instead of repeating the code.
+- A pattern → fix table for common slop: throat-clearing openers, hype words, hedging, recap endings, emoji and "Key Features" lists.
+- An editing mode that keeps every fact in the draft and flags doubtful ones instead of deleting them.
+
 ## Repository layout
 
 ```
@@ -91,6 +105,12 @@ plugins/
     .claude-plugin/plugin.json
     skills/
       grill-me-microservices/
+        SKILL.md
+    README.md
+  unslop-technical-writing/
+    .claude-plugin/plugin.json
+    skills/
+      unslop-technical-writing/
         SKILL.md
     README.md
 ```

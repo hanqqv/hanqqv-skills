@@ -1,0 +1,18 @@
+{
+  "name": "unslop-technical-writing",
+  "version": "0.1.0",
+  "description": "Strip AI slop from technical writing: READMEs, docs, code comments, commit messages and PR descriptions. Keeps facts, cuts filler, never invents details.",
+  "author": {
+    "name": "Han"
+  },
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "documentation",
+    "code-comments",
+    "readme",
+    "commit-messages",
+    "ai-slop",
+    "editing"
+  ]
+}

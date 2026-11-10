@@ -55,6 +55,22 @@
         "opentelemetry",
         "golang"
       ]
+    },
+    {
+      "name": "unslop-technical-writing",
+      "source": "./plugins/unslop-technical-writing",
+      "description": "Strip AI slop from READMEs, docs, code comments, commit messages and PR descriptions without losing or inventing facts.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": [
+        "writing",
+        "documentation",
+        "code-comments",
+        "readme",
+        "commit-messages",
+        "ai-slop",
+        "editing"
+      ]
     }
   ]
 }
